@@ -1,5 +1,4 @@
 
-
 const quadro = document.getElementById("quadro")
 
 function randomico () {
