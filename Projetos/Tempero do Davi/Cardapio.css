@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Especificos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-Center {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0px 0px 20px black;
+}
+
+html {
+    height: auto;
+    scroll-behavior: smooth
+}
+
+h4 {
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.textoFino {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+:target {
+    scroll-margin-top: 5em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fazerCaber {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+
+main {
+    background-color: #F1F1F1;
+}
+
+.header-Container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+header {
+    width: 100%;
+    padding: 6.5vh 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.header-Logo {
+    color: #fff;
+}
+
+header.rolagem .header-Logo {
+    color: black;
+}
+
+header.rolagem {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px #000;
+}
+
+header.rolagem a {
+    color: black;
+}
+
+header.rolagem a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 2.1vw
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.header-Contato button {
+    width: 13.1vw;
+    height: 5vh;
+    border: 0;
+    background-color: rgb(116, 37, 37);
+    color: #F5F5F5;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-Contato button:hover {
+    width: 13.1vw;
+    height: 5vh;
+    border: 0;
+    background-color: black;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+/* BANNER */
+
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1722962883780-8806c3ab546b?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    filter: blur(3px);
+
+    z-index: 1;
+}
+
+/* MAIN */
+
+/* Filtro */
+
+#container-Filtro {
+    background-color: #fff;
+    height: 20vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.fil-Esquerdo {
+    padding: 30px;
+    box-sizing: border-box;
+
+    width: 20%;
+    height: 80%;
+}
+
+.fil-Esquerdo p {
+    color: #742525;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-decoration: underline 4px;
+}
+
+.fil-Direito {
+    padding: 5vh 4vw;
+    box-sizing: border-box;
+
+    width: 35%;
+    height: 80%;
+}
+
+.fil-Direito a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.fil-Direito a:hover {
+    font-size: 27px;
+    color: #742525;
+    text-decoration: underline #742525;
+}
+
+/* Produtos */
+
+#cafe {
+    width: 100%;
+    height: 70vh;
+    padding: 3vh 5vw;
+    box-sizing: border-box;
+}
+
+#calabresa {
+    width: 100%;
+    height: 70vh;
+    padding: 3vh 5vw;
+    box-sizing: border-box;
+}
+
+.box-Produto {
+    background-color: #fff;
+    width: 20%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    transition: .5s;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.box-Produto:hover {
+    transform: scale(1.2);
+}
+
+.box-Produto h1 {
+    color: #606060;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.box-Produto h2 {
+    margin-top: 10px;
+    color: #606060;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.box-Produto h3 {
+    margin-top: 10px;
+    color: #606060a2;
+    font-size: 25px;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.box-Produto h4 {
+    margin-top: 10px;
+    color: #606060;
+    font-size: 30px;
+    font-weight: 100;
+    text-shadow: 0 3px 1px #b1b1b1;
+
+}
+
+.box-Produto button {
+    margin-top: 12px;
+    color: #fff;
+    background-color: #AE5868;
+    width: 70%;
+    height: 5vh;
+    transition: .5s;
+    border-radius: 20px;
+    border: none;
+}
+
+.box-Produto button:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.prod-Promocao {
+    background-color: #A03A4D;
+    color: #fff;
+    width: 30%;
+    height: 10%;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 0 5px #000;
+}
+
+.prod-IMG {
+    width: 100%;
+    height: 50%;
+}
+
+.prod-Carrinho {
+    background-color: #742525;
+    width: 40%;
+    height: 30%;
+}
+
+/* Local */
+
+#local {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-Local {
+    align-items: flex-start;
+    background-color: #fff;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 6vh;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.container-Local h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+.container-Local p {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: #000000e3;
+}
+
+.container-Local button {
+    background-color: #707070;
+    color: #fff;
+    width: 15vw;
+    height: 7vh;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+}
+
+.container-Local button:hover {
+    background-color: #000;
+}
+
+.container-Local img {
+    background-color: rgb(116, 37, 37);
+    width: 25%;
+    height: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login */
+
+#login {
+    background-color: #fff;
+    width: 100%;
+    height: 80vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vh;
+    text-align: center;
+}
+
+
+#login h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+
+.cont-Login {
+    align-items: flex-start;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 6vh;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.cont-Login label {
+    color: #000000e1;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.cont-Login form {
+    width: 100%;
+}
+
+.cont-Login input {
+    margin-top: 10px;
+    background-color: #A03A4D;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.cont-Metade {
+    display: flex;
+}
+
+.box-MetadinhaE {
+    padding: 20px 0;
+    width: 50%;
+    height: 100%;
+    padding: 20px 5vw 0 0;
+}
+
+.box-MetadinhaD {
+    width: 50%;
+    height: 100%;
+    padding: 25px 0 0 5vw;
+}
+
+#login button {
+    margin-left: 35%;
+    margin-top: 3vh;
+    background-color: #707070;
+    color: #fff;
+    border: none;
+    width: 30%;
+    height: 5vh;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background-color: #000;
+}
+
+/* BOX Final */
+
+.box-Final {
+    width: 100%;
+    height: 10vh;
+    border-top: 2px solid #000;
+}
+
+.box-Final h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.flex-Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-Infos {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.footer-Box {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-Fim {
+    text-align: center;
+    text-align: center;
+}

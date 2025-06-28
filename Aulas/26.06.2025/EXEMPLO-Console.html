@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS em HTML </title>
+    <script>
+        console.log("Head")
+    </script>
+</head>
+<body>
+    <!-- ID -->
+    <h1 id="h1"> Hello, world! </h1>
+    <h2 id="h2"> JS digita: </h2>
+
+    <!-- CLASSES -->
+    <h3 class="h3"> Teste 1 </h3>
+    <h3 class="h3"> Teste 2 </h3>
+
+
+    <div id="bloco"></div>
+    <div>
+        <img alt="" id="imagem"
+        src="https://tr.rbxcdn.com/180DAY-41f5ca9291db0dc8ab1d51a37fe5ccdd/420/420/LayeredAccessory/Webp/noFilter" >
+    </div>
+
+    <button id="botao"> Grande </button>
+    <button onclick="trocaImagem()"> Pequeno </button>
+    
+    <script>
+
+        // Documento
+        document.write("<h3>Teste<h3>");
+
+        const h2 = document.getElementById("h2");
+        console.log(h2);
+
+        const h1 = document.querySelector("#h1");
+        console.log(h1);
+
+        const h3 = document.querySelectorAll(".h3");
+        console.log(h3);
+
+        // Manipulação de Elementos
+        // Texto
+
+        h2.textContent = "Novo texto";
+
+        // HTML - Tags
+        const div = document.getElementById("bloco");
+        div.innerHTML = "<p><h1> Titulo do Bloco </h1></p>";
+
+        // Manipulação de Atributos
+        const img = document.getElementById("imagem");
+        console.log(img.getAttribute("src"));
+
+        // img.removeAttribute("src"); // Remove a imagem
+        img.style.border = "10px solid #000"
+        img.style.borderRadius = "50px"
+        img.style.padding = "10px 100px"
+
+        const btn = document.getElementById("botao")
+        btn.addEventListener ("click", function () {
+            console.log("Entrou!")
+            img.setAttribute("src", "https://s.namemc.com/3d/skin/body.png?id=ce9e889948bc58e0&model=classic&width=308&height=308");
+        })
+
+        function trocaImagem () {
+            console.log("Saiu!")
+            img.setAttribute("src", "https://tr.rbxcdn.com/180DAY-41f5ca9291db0dc8ab1d51a37fe5ccdd/420/420/LayeredAccessory/Webp/noFilter");
+        }
+
+        // Console
+        console.log("console.log()");
+        console.error("console.error()");
+        console.info("console.info()");
+        console.warn("console.warn()");
+        console.debug("console.debug()");
+
+    </script>
+
+</body>
+</html>
